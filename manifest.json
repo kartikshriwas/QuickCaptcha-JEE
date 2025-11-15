@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "QuickCaptcha - JEE",
+  "version": "1.0",
+  "description": "Automatically fills the CAPTCHA/SECRET PIN on JEE MAINs 2026 Site.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://examinationservices.nic.in/JeeMainx2026/Root/CandidateLogin.aspx*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "image.png",
+    "48": "image.png",
+    "128": "image.png"
+  },
+  "permissions": []
+}
